@@ -22,6 +22,7 @@ ________________
 - Do APIs require you to contact its maintainer to gain access? I can haz dadjokes.com for our public users and our own Api for our logged in users
 - Are you required to pay to use the API? No
 - Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?) No
+
 For Data Scientists
 ________________
 
