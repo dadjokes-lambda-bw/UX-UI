@@ -1,3 +1,5 @@
+@import 'variable.less';
+
 header{
     display: flex;
     flex-flow: row, nowrap;
@@ -17,8 +19,30 @@ header{
         background-color: grey;
         opacity:50%;
     }
-    
-    nav {
+    .nav2 {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1;
+      font-size: 2rem;
+      display: none;
+      ul{
+        display: flex;
+        width:100%;
+        justify-content: space-around;
+        color: white;
+        padding-left: 100px;
+
+        a {
+            color:inherit;
+            text-decoration: none;
+          }
+        a:hover {
+            color: grey;
+        }       
+      }
+    }
+    .menu {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -28,14 +52,13 @@ header{
         transform: translateX(-350px);
         opacity: 0;
 
-        
         ul{
             display: flex;
-            width:60%;
+            width:100%;
             justify-content: space-around;
             color: white;
             padding-left: 100px;
-            
+
             a {
                 color:inherit;
                 text-decoration: none;
@@ -57,6 +80,8 @@ header{
         }
     }
 }
+
+
 // animation for navigation menu
 @keyframes slide-in-left {
     0% {
@@ -92,3 +117,28 @@ header{
     animation-direction: alternate;
     animation-fill-mode: both;
   }
+
+
+// header contains button and nav and logo-div
+// nav contains ul
+// ul contains anchor tags
+
+@media @mobile {
+  header{
+    display: flex;
+    flex-flow: column, nowrap;
+  }
+  .menu-button{
+      display: none;
+  }
+
+  header .menu {
+   display: none;
+  }
+
+  header .nav2 {
+   display: flex;
+  }
+
+}
+
