@@ -1,6 +1,3 @@
-.close {
-  display: none;
-}
 html,
 body,
 div,
@@ -194,6 +191,9 @@ footer p {
   background: white;
   border-radius: 1rem;
   border: 1px solid #2f9cf4;
+}
+.about-content .card .content-hidden {
+  display: none;
 }
 .about-content .card img {
   padding: 1rem;
