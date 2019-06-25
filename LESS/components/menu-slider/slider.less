@@ -1,0 +1,36 @@
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-350px);
+    opacity: 0;
+  }
+}
+.slide-in-left {
+  animation-name: slide-in-left;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+.slide-out-left {
+  animation-name: slide-out-left;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+
+//dont forget to @import '../components/menu-slider/slider.css'; on index.less
