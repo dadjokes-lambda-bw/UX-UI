@@ -10,9 +10,9 @@ const toggleOn = () => {
 };
 
 // reference to the ".menu" class element
-const menu= document.querySelector('.navbar');
+const menu= document.querySelector('.menu');
 //reference to the ".menu-button" class element
-const menuButton=document.querySelector('.nav-button');
+const menuButton=document.querySelector('.menu-button');
 
 //handles clicks
 menuButton.addEventListener('click', () => {
