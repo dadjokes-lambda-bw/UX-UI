@@ -7,7 +7,7 @@ const toggleOn = () => {
     menu.classList.add('slide-in-left');
     menu.classList.remove('slide-out-left');
   }
-};
+}; 
 
 // reference to the ".menu" class element
 const menu= document.querySelector('.menu');

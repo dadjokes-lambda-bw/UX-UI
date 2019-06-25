@@ -18,17 +18,44 @@ header{
         opacity:50%;
     }
     
-    nav {
+    .nav2 {
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1;
+      font-size: 2rem;
+      display: none;
+
+      ul{
+        display: flex;
+        width:100%;
+        justify-content: space-around;
+        color: white;
+        padding-left: 100px;
+
+        a {
+            color:inherit;
+            text-decoration: none;
+          }
+        a:hover {
+            color: grey;
+        }       
+      }
+    }
+    //AKA nav1
+    .menu {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index:1;
+        font-size: 2rem;
+        transform: translateX(-350px);
+        opacity: 0;
 
-        
         ul{
             display: flex;
-            width:60%;
+            width:100%;
             justify-content: space-around;
             color: white;
             padding-left: 100px;
@@ -49,7 +76,7 @@ header{
             width: 20%;
             margin-right:20px;
             position: absolute;
-            min-width:87px;
+            min-width:107px;
             padding-left: 20px;
         }
     }
@@ -64,7 +91,7 @@ header{
       transform: translateX(0);
       opacity: 1;
     }
-  }
+  } 
 
   @keyframes slide-out-left {
     0% {
@@ -89,3 +116,28 @@ header{
     animation-direction: alternate;
     animation-fill-mode: both;
   }
+
+  //mobile responsiveness
+  // header contains button and nav and logo-div
+// nav contains ul
+// ul contains anchor tags
+
+@media @mobile {
+  header{
+    display: flex;
+    flex-flow: column, nowrap;
+  }
+  .menu-button{
+      display: none;
+  }
+
+  header .menu {
+   display: none;
+  }
+
+  header .nav2 {
+   display: flex;
+  }
+
+}
+
