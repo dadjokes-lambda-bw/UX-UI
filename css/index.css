@@ -141,7 +141,29 @@ header .menu-button:hover {
   background-color: grey;
   opacity: 50%;
 }
-header nav {
+header .nav2 {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-size: 2rem;
+  display: none;
+}
+header .nav2 ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: white;
+  padding-left: 100px;
+}
+header .nav2 ul a {
+  color: inherit;
+  text-decoration: none;
+}
+header .nav2 ul a:hover {
+  color: grey;
+}
+header .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -151,18 +173,18 @@ header nav {
   transform: translateX(-350px);
   opacity: 0;
 }
-header nav ul {
+header .menu ul {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-around;
   color: white;
   padding-left: 100px;
 }
-header nav ul a {
+header .menu ul a {
   color: inherit;
   text-decoration: none;
 }
-header nav ul a:hover {
+header .menu ul a:hover {
   color: grey;
 }
 header div.logo {
@@ -207,6 +229,21 @@ header div.logo img {
   animation-duration: 2s;
   animation-direction: alternate;
   animation-fill-mode: both;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column, nowrap;
+  }
+  .menu-button {
+    display: none;
+  }
+  header .menu {
+    display: none;
+  }
+  header .nav2 {
+    display: flex;
+  }
 }
 * {
   box-sizing: border-box;
