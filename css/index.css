@@ -141,7 +141,29 @@ header .menu-button:hover {
   background-color: grey;
   opacity: 50%;
 }
-header nav {
+header .nav2 {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-size: 2rem;
+  display: none;
+}
+header .nav2 ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  color: white;
+  padding-left: 100px;
+}
+header .nav2 ul a {
+  color: inherit;
+  text-decoration: none;
+}
+header .nav2 ul a:hover {
+  color: grey;
+}
+header .menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -151,18 +173,18 @@ header nav {
   transform: translateX(-350px);
   opacity: 0;
 }
-header nav ul {
+header .menu ul {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-around;
   color: white;
   padding-left: 100px;
 }
-header nav ul a {
+header .menu ul a {
   color: inherit;
   text-decoration: none;
 }
-header nav ul a:hover {
+header .menu ul a:hover {
   color: grey;
 }
 header div.logo {
@@ -207,6 +229,21 @@ header div.logo img {
   animation-duration: 2s;
   animation-direction: alternate;
   animation-fill-mode: both;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-flow: column, nowrap;
+  }
+  .menu-button {
+    display: none;
+  }
+  header .menu {
+    display: none;
+  }
+  header .nav2 {
+    display: flex;
+  }
 }
 * {
   box-sizing: border-box;
@@ -266,6 +303,19 @@ footer p {
   justify-content: space-between;
   line-height: 1.3;
 }
+@media (max-width: 800px) {
+  .about-content {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .about-content .card {
   margin: 20px 0;
   padding: 20px;
@@ -274,8 +324,15 @@ footer p {
   border-radius: 1rem;
   border: 1px solid #2f9cf4;
 }
-.about-content .card .content-hidden {
-  display: none;
+@media (max-width: 800px) {
+  .about-content .card {
+    max-width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .card {
+    max-width: 75%;
+  }
 }
 .about-content .card img {
   padding: 1rem;
@@ -289,10 +346,117 @@ footer p {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
+  padding: 0.5rem;
+  background: #FBD771;
 }
 .about-content .card p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
   color: #FFFFFF;
+
 }
+* {
+  box-sizing: border-box;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 880px;
+  position: relative;
+  margin: auto;
+}
+.imgcontainer {
+  max-width: 20rem;
+  border: 1px solid black;
+}
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+.content-hidden {
+  display: none;
+
+
