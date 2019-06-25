@@ -18,5 +18,3 @@ const menuButton=document.querySelector('.menu-button');
 menuButton.addEventListener('click', () => {
   toggleOn();
 });
-
-//dont forget to add <script defer="defer" src="../components/Menu-slider/slider.js" async></script> in body of index.html
