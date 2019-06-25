@@ -3,6 +3,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     line-height: 1.3;
+    @media @tablet {
+        justify-content: space-evenly;
+    }
+    @media @mobile {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+
+    }
 
     .card {
         margin: 20px 0;
@@ -11,6 +21,14 @@
         background: white;
         border-radius: 1rem;
         border: 1px solid @darker-highlight;
+        @media @tablet {
+            max-width: 40%;
+        }
+        @media @mobile {
+            max-width: 75%;
+           
+        }
+        
         
 
         img {
@@ -26,6 +44,8 @@
             cursor: pointer;
             border: 1px solid black;
             text-align: center;
+            padding: .5rem;
+            background: @dandelion;
         }
 
         p {
@@ -33,18 +53,16 @@
             border: 3px dotted @dark-pink;
             padding: 1rem;
             color: @font-color;
+            
         }
-
-
 
 
     }
 
 
 
+}
 
-
-
-
-
+.content-hidden {
+    display: none;
 }

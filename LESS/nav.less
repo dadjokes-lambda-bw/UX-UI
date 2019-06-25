@@ -1,0 +1,94 @@
+header{
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: center;
+    align-content: center;
+    background-color: #78b4e6;
+    width: 100%;
+    height: 75px;
+
+    .menu-button{
+        float: left;
+        padding-left: 20px;
+        padding-right:20px;
+        z-index:2;
+    }
+    .menu-button:hover {
+        background-color: grey;
+        opacity:50%;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index:1;
+        font-size: 2rem;
+        transform: translateX(-350px);
+        opacity: 0;
+
+        
+        ul{
+            display: flex;
+            width:60%;
+            justify-content: space-around;
+            color: white;
+            padding-left: 100px;
+            
+            a {
+                color:inherit;
+                text-decoration: none;
+              }
+            a:hover {
+                color: grey;
+            }        }
+        
+    }
+    div.logo {
+        width: 25%;
+        margin-right:42px;
+        img { 
+            width: 20%;
+            margin-right:20px;
+            position: absolute;
+            min-width:107px;
+            padding-left: 20px;
+        }
+    }
+}
+// animation for navigation menu
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-350px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  } 
+
+  @keyframes slide-out-left {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-350px);
+      opacity: 0;
+    }
+  }
+  .slide-in-left {
+    animation-name: slide-in-left;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+  
+  .slide-out-left {
+    animation-name: slide-out-left;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
