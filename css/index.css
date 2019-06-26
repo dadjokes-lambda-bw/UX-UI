@@ -403,19 +403,31 @@ footer p {
 .about-content .card img {
   padding: 1rem;
   border: 1px solid black;
+  height: 24rem;
   border-radius: 100%;
-  height: auto;
   max-width: 75%;
-  margin: 2rem 2rem 3rem 4rem;
+  margin: 2rem 4rem 3rem 8rem;
 }
-.about-content .card h2 {
+@media (max-width: 800px) {
+  .about-content .card img {
+    margin-left: 3rem;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .about-content .card img {
+    margin-left: 6rem;
+    height: 24rem;
+  }
+}
+.about-content h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.about-content .card p {
+.about-content p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
@@ -517,7 +529,6 @@ footer p {
 .active,
 .dot:hover {
   background-color: #717171;
-
 }
 /* Fading animation */
 .fade {
@@ -553,5 +564,4 @@ footer p {
 }
 p {
   margin: 10px;
-
 }
