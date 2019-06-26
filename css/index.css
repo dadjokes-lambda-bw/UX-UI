@@ -427,11 +427,13 @@ footer p {
   display: none;
 }
 .accordian {
-  border: 1px solid black;
+  border: 3px solid rgba(240, 98, 146);
 }
 .accordian .panel {
+  background-color: #f48fb1;
+  color: #FFFFFF;
   padding: 3rem;
-  border: 1px solid red;
+  border: 1px solid #2f9cf4;
 }
 .accordian .panel .panel-bar {
   display: flex;
@@ -442,6 +444,16 @@ footer p {
 }
 .accordian .panel .panel-bar .panel-buttons button {
   cursor: pointer;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #f48fb1;
+  border-radius: 1.4rem;
+  padding: 1.25rem;
+  background-color: #FFFFFF;
+}
+.accordian .panel .panel-bar .panel-buttons button:hover {
+  background-color: #2f9cf4;
 }
 .accordian .panel .panel-bar .panel-buttons .hide-btn {
   display: none;
