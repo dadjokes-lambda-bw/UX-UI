@@ -36,10 +36,20 @@
             padding: 1rem;
             border: 1px solid black;
             border-radius: 100%;
-            height: auto;
+            height: 24rem;
             max-width: 75%;
-            margin: 2rem 2rem 3rem 4rem;
+            margin: 2rem 4rem 3rem 8rem;
+            @media @tablet {
+                margin-left: 3rem;
+                height:auto;
+            }
+        
+             @media @mobile {
+                margin-left: 6rem;
+                height: 24rem;
+             }
         }
+        
 
         h2 {
             cursor: pointer;
