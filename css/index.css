@@ -337,7 +337,7 @@ footer p {
   height: auto;
   position: relative;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 2rem;
 }
 .carousel .leftButton,
 .carousel .rightButton {
@@ -483,7 +483,7 @@ footer p {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -515,21 +515,8 @@ footer p {
   position: absolute;
   top: 0;
 }
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #717171;
-}
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -564,4 +551,17 @@ footer p {
 }
 p {
   margin: 10px;
+
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  line-height: 1.5;
+  font-size: 25px;
+}
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
 }
