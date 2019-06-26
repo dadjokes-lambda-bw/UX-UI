@@ -1,3 +1,6 @@
+.width-100 {
+  width: 100%;
+}
 html,
 body,
 div,
@@ -321,6 +324,46 @@ footer {
 footer p {
   border: 1px solid black;
 }
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.carousel .leftButton,
+.carousel .rightButton {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  font-size: 30px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .leftButton {
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
+}
+.carousel .rightbutton {
+  top: 50%;
+  right: 2%;
+  transform: translate(0, -50%);
+}
+.carousel .mySlides {
+  width: 100%;
+  display: none;
+}
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -378,44 +421,14 @@ footer p {
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
   color: #FFFFFF;
+
+}
+.content-hidden {
+  display: none;
+
 }
 * {
   box-sizing: border-box;
-}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 880px;
-  position: relative;
-  margin: auto;
-}
-.imgcontainer {
-  max-width: 20rem;
-  border: 1px solid black;
-}
-/* Hide the images by default */
-.mySlides {
-  display: flex;
-}
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -431,6 +444,27 @@ footer p {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+.slideshow-container {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slideshow-container .mySlides {
+  width: 24.5%;
+  height: auto;
+  margin: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imgcontainer {
+  height: 250px;
+  width: 250px;
+  margin: 5%;
+  box-shadow: 1px 1px 2px 3px #0e0707;
 }
 /* Number text (1/3 etc) */
 .numbertext {
@@ -455,31 +489,3 @@ footer p {
 .dot:hover {
   background-color: #717171;
 }
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-
-}
-.content-hidden {
-  display: none;
-
-
