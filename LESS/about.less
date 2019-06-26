@@ -71,10 +71,12 @@
 }
 
 .accordian {
-    border: 1px solid black;
+    border: 3px solid @dark-pink;
     .panel {
+        background-color: @pink;
+        color: @white;
         padding: 3rem;
-        border: 1px solid red;
+        border: 1px solid @darker-highlight;
 
         .panel-bar {
             display: flex;
@@ -84,22 +86,27 @@
             }
             .panel-buttons{
                 button {
-                    cursor: pointer;
-                }
-                .hide-btn {
-                    display: none;
-                }
+                    .accord-btn(@white, @pink)
+
+                    }
+                    .hide-btn {
+                        display: none;
+                    }
             }//panel-buttons
+                
+ 
+
         }//panel-bar
         .panel-content {
             display: none;
             line-height: 1.5;
             margin: 2rem 0;
-        }
+        }//panel-content
         .toggle-on {
             display: block;
-        }
+        }//toggle-on
     }//panel
+
 
 
 }//accordian
