@@ -337,7 +337,7 @@ footer p {
   height: auto;
   position: relative;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 2rem;
 }
 .carousel .leftButton,
 .carousel .rightButton {
@@ -438,19 +438,23 @@ footer p {
 }
 .accordian {
   border: 3px solid rgba(240, 98, 146);
+  border-radius: 1rem;
+  margin-top: 3rem;
 }
 .accordian .panel {
   background-color: #f48fb1;
   color: #FFFFFF;
   padding: 3rem;
+  border-radius: 1rem;
   border: 1px solid #2f9cf4;
 }
 .accordian .panel .panel-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .accordian .panel .panel-bar h3 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 .accordian .panel .panel-bar .panel-buttons button {
   cursor: pointer;
@@ -483,7 +487,8 @@ footer p {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -515,21 +520,7 @@ footer p {
   position: absolute;
   top: 0;
 }
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #717171;
-}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -564,4 +555,19 @@ footer p {
 }
 p {
   margin: 10px;
+
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  line-height: 1.5;
+  font-size: 25px;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
 }
