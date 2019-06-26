@@ -422,7 +422,6 @@ footer p {
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
   color: #FFFFFF;
-
 }
 .content-hidden {
   display: none;
@@ -454,9 +453,7 @@ footer p {
 }
 .accordian .panel .toggle-on {
   display: block;
-
 }
-
 * {
   box-sizing: border-box;
 }
@@ -518,5 +515,4 @@ footer p {
 .active,
 .dot:hover {
   background-color: #717171;
-
 }
