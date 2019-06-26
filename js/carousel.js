@@ -24,8 +24,8 @@ this.cards[this.index].style.display = 'block';
 toggleLeft(){
   this.cards[this.index].style.display = 'none';
   
-  if (this.index === this.cards.length -1){
-    this.index = 0;
+  if (this.index === 0){
+    this.index = this.cards.length -1;
   }
   else {
   this.index --
