@@ -22,8 +22,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap;
-    
+            flex-wrap: nowrap;   
         }
 
     
@@ -34,7 +33,10 @@
             background: white;
             border-radius: 1rem;
             border: 1px solid @darker-highlight;
-
+            
+            @media @mobile {
+                min-width: 30rem;
+            }
         
         
 
@@ -48,13 +50,13 @@
 
  
             @media @tablet {
-                max-width: 40%;
+                margin-left: 3rem;
+                height: auto;
             }
-            @media @mobile {
-                max-width: 75%;
-               
+            @media @mobile {             
+                height: 24rem;
             }
-            
+        }//img
         
             h2 {
                 cursor: pointer;
@@ -71,9 +73,6 @@
                 color: @font-color;
                 
             }//p
-    
-    
-        }//img
     
     
       }//card
