@@ -410,16 +410,6 @@ footer p:hover {
   border-radius: 1rem;
   border: 1px solid #2f9cf4;
 }
-@media (max-width: 800px) {
-  .top .about-content .card {
-    max-width: 40%;
-  }
-}
-@media (max-width: 500px) {
-  .top .about-content .card {
-    max-width: 75%;
-  }
-}
 .top .about-content .card img {
   padding: 1rem;
   border: 1px solid black;
@@ -430,24 +420,22 @@ footer p:hover {
 }
 @media (max-width: 800px) {
   .top .about-content .card img {
-    margin-left: 3rem;
-    height: auto;
+    max-width: 40%;
   }
 }
 @media (max-width: 500px) {
   .top .about-content .card img {
-    margin-left: 6rem;
-    height: 24rem;
+    max-width: 75%;
   }
 }
-.top .about-content .card h2 {
+.top .about-content .card img h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.top .about-content .card p {
+.top .about-content .card img p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
@@ -627,7 +615,6 @@ footer p:hover {
   position: absolute;
   top: 0;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -651,25 +638,6 @@ footer p:hover {
     opacity: 1;
   }
 }
-
-.left-content {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: inherit;
-  color: #000000;
-  border: 10px double white;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 20px;
-}
-p {
-  margin: 10px;
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  line-height: 1.5;
-  font-size: 25px;
-  text-align: center;
-}
-
 h1 {
   text-align: center;
   margin-top: 4rem;
