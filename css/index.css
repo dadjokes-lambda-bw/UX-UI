@@ -373,9 +373,6 @@ footer p:hover {
   right: 2%;
   transform: translate(0, -50%);
 }
-.top h1 {
-  border: 1px solid black;
-}
 @media (max-width: 500px) {
   .top h1 {
     font-size: 5rem;
@@ -450,9 +447,6 @@ footer p:hover {
 .content-hidden {
   display: none;
 }
-.bottom h1 {
-  border: 1px solid black;
-}
 @media (max-width: 500px) {
   .bottom h1 {
     font-size: 3rem;
@@ -502,8 +496,16 @@ footer p:hover {
 .accordian .panel .toggle-on {
   display: block;
 }
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
+}
 .marketing-content {
-  border: 1px solid black;
   display: flex;
   max-width: 100%;
   justify-content: space-around;
@@ -515,7 +517,6 @@ footer p:hover {
   }
 }
 .marketing-content .left-content {
-  border: 1px solid red;
   margin: 2rem;
   width: 75%;
 }
@@ -540,7 +541,6 @@ footer p:hover {
   }
 }
 .marketing-content .right-content {
-  border: 1px solid red;
   margin: 2rem;
   width: 25%;
   display: flex;
@@ -560,7 +560,6 @@ footer p:hover {
   padding: 1rem;
   font-size: 1.8rem;
   color: #FFFFFF;
-  border: 1rem double #FFFFFF;
 }
 @media (max-width: 500px) {
   .marketing-content .right-content p {
