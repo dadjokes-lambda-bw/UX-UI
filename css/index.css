@@ -420,14 +420,14 @@ footer p {
     height: 24rem;
   }
 }
-.about-content h2 {
+.about-content .card h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.about-content p {
+.about-content .card p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
@@ -480,10 +480,80 @@ footer p {
 .accordian .panel .toggle-on {
   display: block;
 }
-* {
-  box-sizing: border-box;
+.marketing-content {
+  border: 1px solid black;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
 }
-/* On hover, add a black background color with a little bit see-through */
+@media (max-width: 500px) {
+  .marketing-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.marketing-content .left-content {
+  border: 1px solid red;
+  margin: 2rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .marketing-content .left-content {
+    width: 90%;
+  }
+}
+.marketing-content .left-content p {
+  font-style: inherit;
+  border: 1rem double white;
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .marketing-content .left-content p {
+    border: 0.5rem solid white;
+  }
+}
+.marketing-content .right-content {
+  border: 1px solid red;
+  margin: 2rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .marketing-content .right-content {
+    width: 70%;
+    margin: 0.5rem;
+  }
+}
+.marketing-content .right-content p {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1rem double #FFFFFF;
+}
+@media (max-width: 500px) {
+  .marketing-content .right-content p {
+    text-align: center;
+    border: none;
+  }
+}
+.marketing-content .right-content .button {
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #f48fb1;
+  border-radius: 1.4rem;
+  padding: 1.25rem;
+  background-color: #FFFFFF;
+}
+.marketing-content .right-content .button:hover {
+  background-color: #2f9cf4;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -520,7 +590,6 @@ footer p {
   position: absolute;
   top: 0;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -543,24 +612,6 @@ footer p {
   to {
     opacity: 1;
   }
-}
-.left-content {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-style: inherit;
-  color: #000000;
-  border: 10px double white;
-  margin-left: 400px;
-  margin-right: 400px;
-  margin-top: 20px;
-}
-p {
-  margin: 10px;
-
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  line-height: 1.5;
-  font-size: 25px;
-  text-align: center;
 }
 h1 {
   text-align: center;
