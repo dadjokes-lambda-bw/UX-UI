@@ -373,7 +373,16 @@ footer p:hover {
   right: 2%;
   transform: translate(0, -50%);
 }
-.about-content {
+.top h1 {
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .top h1 {
+    font-size: 5rem;
+    margin-bottom: 0.01rem;
+  }
+}
+.top .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -381,19 +390,19 @@ footer p:hover {
   padding-top: 5rem;
 }
 @media (max-width: 800px) {
-  .about-content {
+  .top .about-content {
     justify-content: space-evenly;
   }
 }
 @media (max-width: 500px) {
-  .about-content {
+  .top .about-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
   }
 }
-.about-content .card {
+.top .about-content .card {
   margin: 20px 0;
   padding: 20px;
   max-width: 45%;
@@ -402,16 +411,16 @@ footer p:hover {
   border: 1px solid #2f9cf4;
 }
 @media (max-width: 800px) {
-  .about-content .card {
+  .top .about-content .card {
     max-width: 40%;
   }
 }
 @media (max-width: 500px) {
-  .about-content .card {
+  .top .about-content .card {
     max-width: 75%;
   }
 }
-.about-content .card img {
+.top .about-content .card img {
   padding: 1rem;
   border: 1px solid black;
   height: 24rem;
@@ -420,25 +429,25 @@ footer p:hover {
   margin: 2rem 4rem 3rem 8rem;
 }
 @media (max-width: 800px) {
-  .about-content .card img {
+  .top .about-content .card img {
     margin-left: 3rem;
     height: auto;
   }
 }
 @media (max-width: 500px) {
-  .about-content .card img {
+  .top .about-content .card img {
     margin-left: 6rem;
     height: 24rem;
   }
 }
-.about-content .card h2 {
+.top .about-content .card h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.about-content .card p {
+.top .about-content .card p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
@@ -447,27 +456,35 @@ footer p:hover {
 .content-hidden {
   display: none;
 }
-.accordian {
+.bottom h1 {
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .bottom h1 {
+    font-size: 3rem;
+  }
+}
+.bottom .accordian {
   border: 3px solid rgba(240, 98, 146);
   border-radius: 1rem;
   margin-top: 3rem;
 }
-.accordian .panel {
+.bottom .accordian .panel {
   background-color: #f48fb1;
   color: #FFFFFF;
   padding: 3rem;
   border-radius: 1rem;
   border: 1px solid #2f9cf4;
 }
-.accordian .panel .panel-bar {
+.bottom .accordian .panel .panel-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.accordian .panel .panel-bar h3 {
+.bottom .accordian .panel .panel-bar h3 {
   font-size: 2.5rem;
 }
-.accordian .panel .panel-bar .panel-buttons button {
+.bottom .accordian .panel .panel-bar .panel-buttons button {
   cursor: pointer;
   width: 100%;
   font-size: 1.6rem;
@@ -477,18 +494,18 @@ footer p:hover {
   padding: 1.25rem;
   background-color: #FFFFFF;
 }
-.accordian .panel .panel-bar .panel-buttons button:hover {
+.bottom .accordian .panel .panel-bar .panel-buttons button:hover {
   background-color: #2f9cf4;
 }
-.accordian .panel .panel-bar .panel-buttons .hide-btn {
+.bottom .accordian .panel .panel-bar .panel-buttons .hide-btn {
   display: none;
 }
-.accordian .panel .panel-content {
+.bottom .accordian .panel .panel-content {
   display: none;
   line-height: 1.5;
   margin: 2rem 0;
 }
-.accordian .panel .toggle-on {
+.bottom .accordian .panel .toggle-on {
   display: block;
 }
 .marketing-content {
