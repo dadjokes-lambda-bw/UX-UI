@@ -1,7 +1,7 @@
 
 .top{
     h1{
-        border: 1px solid black;
+        // border: 1px solid black;
         @media @mobile {
             font-size: 5rem;
             margin-bottom: .01rem;
@@ -22,8 +22,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-wrap: nowrap;
-    
+            flex-wrap: nowrap;   
         }
 
     
@@ -34,7 +33,13 @@
             background: white;
             border-radius: 1rem;
             border: 1px solid @darker-highlight;
-
+            @media @tablet {
+                max-width: 40%;
+            }
+            
+            @media @mobile {
+                min-width: 30rem;
+            }
         
         
 
@@ -48,13 +53,13 @@
 
  
             @media @tablet {
-                max-width: 40%;
+                margin-left: 3rem;
+                height: auto;
             }
-            @media @mobile {
-                max-width: 75%;
-               
+            @media @mobile {             
+                height: 24rem;
             }
-            
+        }//img
         
             h2 {
                 cursor: pointer;
@@ -73,9 +78,6 @@
             }//p
     
     
-        }//img
-    
-    
       }//card
 
     }//about-content
@@ -91,7 +93,7 @@
 }
 .bottom{
     h1{
-        border: 1px solid black;
+        // border: 1px solid black;
         @media @mobile {
             font-size: 3rem;
         }
@@ -102,12 +104,13 @@
 
 
 .accordian {
-    border: 3px solid @dark-pink;
+    // border: 3px solid @dark-pink;
     border-radius: 1rem;
     margin-top: 3rem;
     .panel {
         background-color: @pink;
         color: @white;
+        margin-top: 1rem;
         padding: 3rem;
         border-radius: 1rem;
         border: 1px solid @darker-highlight;
@@ -142,3 +145,14 @@
         }//toggle-on
     }//panel
 }//accordian
+
+h1{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+  
+  }
