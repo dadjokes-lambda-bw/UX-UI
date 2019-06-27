@@ -410,6 +410,11 @@ footer p:hover {
   border-radius: 1rem;
   border: 1px solid #2f9cf4;
 }
+@media (max-width: 500px) {
+  .top .about-content .card {
+    min-width: 30rem;
+  }
+}
 .top .about-content .card img {
   padding: 1rem;
   border: 1px solid black;
@@ -420,22 +425,23 @@ footer p:hover {
 }
 @media (max-width: 800px) {
   .top .about-content .card img {
-    max-width: 40%;
+    margin-left: 3rem;
+    height: auto;
   }
 }
 @media (max-width: 500px) {
   .top .about-content .card img {
-    max-width: 75%;
+    height: 24rem;
   }
 }
-.top .about-content .card img h2 {
+.top .about-content .card h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.top .about-content .card img p {
+.top .about-content .card p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
