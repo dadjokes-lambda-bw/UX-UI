@@ -426,7 +426,7 @@ footer p:hover {
   height: 24rem;
   border-radius: 100%;
   max-width: 75%;
-  margin: 2rem 4rem 3rem 8rem;
+  margin: 2rem 8rem 3rem 8rem;
 }
 @media (max-width: 800px) {
   .top .about-content .card img {
@@ -627,6 +627,7 @@ footer p:hover {
   position: absolute;
   top: 0;
 }
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -650,6 +651,25 @@ footer p:hover {
     opacity: 1;
   }
 }
+
+.left-content {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: inherit;
+  color: #000000;
+  border: 10px double white;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+}
+p {
+  margin: 10px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  line-height: 1.5;
+  font-size: 25px;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   margin-top: 4rem;
