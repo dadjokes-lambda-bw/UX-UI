@@ -448,6 +448,12 @@ footer p:hover {
   padding: 1rem;
   color: #FFFFFF;
 }
+.top .about-content .card p img {
+  border: none;
+  border-radius: none;
+  height: auto;
+  margin: 0 auto;
+}
 .content-hidden {
   display: none;
 }
@@ -573,6 +579,9 @@ h1 {
     text-align: center;
     border: none;
   }
+}
+.marketing-content .right-content a {
+  text-decoration: none;
 }
 .marketing-content .right-content .button {
   cursor: pointer;
