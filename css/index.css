@@ -326,10 +326,14 @@ footer {
 }
 footer p {
   border: 1px solid black;
+  color: #FFFFFF;
+}
+footer p:hover {
+  color: rgba(240, 98, 146);
 }
 .carousel {
   width: 100%;
-  max-width: 900px;
+  max-width: 880px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,6 +342,13 @@ footer p {
   position: relative;
   overflow: hidden;
   margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  .carousel {
+    max-width: 90%;
+    border: 1px solid red;
+    margin-left: 2.5rem;
+  }
 }
 .carousel .leftButton,
 .carousel .rightButton {
@@ -362,7 +373,16 @@ footer p {
   right: 2%;
   transform: translate(0, -50%);
 }
-.about-content {
+.top h1 {
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .top h1 {
+    font-size: 5rem;
+    margin-bottom: 0.01rem;
+  }
+}
+.top .about-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -370,19 +390,19 @@ footer p {
   padding-top: 5rem;
 }
 @media (max-width: 800px) {
-  .about-content {
+  .top .about-content {
     justify-content: space-evenly;
   }
 }
 @media (max-width: 500px) {
-  .about-content {
+  .top .about-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
   }
 }
-.about-content .card {
+.top .about-content .card {
   margin: 20px 0;
   padding: 20px;
   max-width: 45%;
@@ -391,16 +411,16 @@ footer p {
   border: 1px solid #2f9cf4;
 }
 @media (max-width: 800px) {
-  .about-content .card {
+  .top .about-content .card {
     max-width: 40%;
   }
 }
 @media (max-width: 500px) {
-  .about-content .card {
+  .top .about-content .card {
     max-width: 75%;
   }
 }
-.about-content .card img {
+.top .about-content .card img {
   padding: 1rem;
   border: 1px solid black;
   height: 24rem;
@@ -409,25 +429,25 @@ footer p {
   margin: 2rem 8rem 3rem 8rem;
 }
 @media (max-width: 800px) {
-  .about-content .card img {
+  .top .about-content .card img {
     margin-left: 3rem;
     height: auto;
   }
 }
 @media (max-width: 500px) {
-  .about-content .card img {
+  .top .about-content .card img {
     margin-left: 6rem;
     height: 24rem;
   }
 }
-.about-content h2 {
+.top .about-content .card h2 {
   cursor: pointer;
   border: 1px solid black;
   text-align: center;
   padding: 0.5rem;
   background: #FBD771;
 }
-.about-content p {
+.top .about-content .card p {
   background-color: #f48fb1;
   border: 3px dotted rgba(240, 98, 146);
   padding: 1rem;
@@ -435,6 +455,14 @@ footer p {
 }
 .content-hidden {
   display: none;
+}
+.bottom h1 {
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .bottom h1 {
+    font-size: 3rem;
+  }
 }
 .accordian {
   border: 3px solid rgba(240, 98, 146);
@@ -480,10 +508,85 @@ footer p {
 .accordian .panel .toggle-on {
   display: block;
 }
-* {
-  box-sizing: border-box;
+.marketing-content {
+  border: 1px solid black;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
 }
-/* On hover, add a black background color with a little bit see-through */
+@media (max-width: 500px) {
+  .marketing-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.marketing-content .left-content {
+  border: 1px solid red;
+  margin: 2rem;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .marketing-content .left-content {
+    width: 90%;
+  }
+}
+.marketing-content .left-content p {
+  font-style: inherit;
+  border: 1rem double white;
+  width: 100%;
+  color: #FFFFFF;
+  margin: 1rem;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .marketing-content .left-content p {
+    border: 0.5rem solid white;
+    font-size: 1.8rem;
+    background-color: #2f9cf4;
+  }
+}
+.marketing-content .right-content {
+  border: 1px solid red;
+  margin: 2rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .marketing-content .right-content {
+    width: 70%;
+    margin: 0.5rem;
+  }
+}
+.marketing-content .right-content p {
+  width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  border: 1rem double #FFFFFF;
+}
+@media (max-width: 500px) {
+  .marketing-content .right-content p {
+    text-align: center;
+    border: none;
+  }
+}
+.marketing-content .right-content .button {
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #f48fb1;
+  border-radius: 1.4rem;
+  padding: 1.25rem;
+  background-color: #FFFFFF;
+}
+.marketing-content .right-content .button:hover {
+  background-color: #2f9cf4;
+}
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -500,6 +603,11 @@ footer p {
   flex-direction: row;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .slideshow-container {
+    width: 95%;
+  }
+}
 .slideshow-container .mySlides {
   width: 100%;
   height: auto;
@@ -508,19 +616,18 @@ footer p {
   flex-direction: row;
   justify-content: center;
 }
-.imgcontainer {
+.slideshow-container .mySlides .imgcontainer {
   height: auto;
   width: 100%;
 }
-/* Number text (1/3 etc) */
-.numbertext {
+.slideshow-container .mySlides .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-/* The dots/bullets/indicators */
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -544,6 +651,7 @@ footer p {
     opacity: 1;
   }
 }
+
 .left-content {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: inherit;
@@ -561,6 +669,7 @@ p {
   font-size: 25px;
   text-align: center;
 }
+
 h1 {
   text-align: center;
   margin-top: 4rem;
