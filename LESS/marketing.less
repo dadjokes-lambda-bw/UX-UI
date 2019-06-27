@@ -26,14 +26,11 @@
       margin: 1rem;
       padding: 1rem;
       @media @mobile{
-        border: .5rem solid white;
         font-size: 1.8rem;
-        background-color: @darker-highlight;
       }
      } 
   }
   .right-content{
-    // border: 1px solid red;
     margin: 2rem;
     width: 25%;
     display: flex;
@@ -50,7 +47,9 @@
       padding: 1rem;
       font-size: 1.8rem;
       color: @white;
-      // border: 1rem double @white;
+      @media @tablet{
+        min-width: 20rem;
+      }
       @media @mobile {
         text-align: center;
         border: none;
